@@ -1,0 +1,233 @@
+Create a fully responsive single-page website called “Model Submission Forum” with the following exact requirements:
+
+GENERAL STYLE REQUIREMENTS
+
+Minimalistic UI
+
+Dark theme using the logo color #C0C0C0 as primary accent
+
+Background: #0A0A0A
+
+Text: #C0C0C0
+
+Font family: Poppins, all weights included (Google Fonts)
+
+Rounded inputs, clean spacing (32px section spacing, 16px internal padding)
+
+Use Flexbox/Grid for a centered, smooth layout
+
+Form must look professional, airy, and easy to complete on mobile
+
+HEADER
+
+Full-width fixed header
+
+Centered SVG logo (placeholder, I will replace later)
+
+Logo color: #C0C0C0
+
+Small subtitle under logo: “Model Submission Forum”
+
+MAIN FORM CONTENT
+
+A single centralized column (max-width: 650px).
+Spacing between sections: 32px.
+
+1. Personal Information
+
+Fields:
+
+Full Name (text)
+
+Email Address (text)
+
+Phone Number (text)
+
+Physical Address (textarea)
+
+Upload a Picture (file input)
+
+2. Body Measurements (in centimeters)
+
+All numeric inputs ONLY (type="number"):
+
+Height (cm)
+
+Chest/Bust (cm)
+
+Waist (cm)
+
+Hips (cm)
+
+Shoulders (cm)
+
+Inseam (cm)
+
+Sleeve length (cm)
+
+Neck circumference (cm)
+
+Group them in neat rows (2-column grid).
+
+3. Gender Selection
+
+A required toggle:
+
+Male
+
+Female
+
+Use radio buttons styled as pill selectors.
+
+4. Body Morphology
+
+Show morphologies depending on gender selection:
+
+If Male:
+
+Slim
+
+Fit
+
+Athletic
+
+Muscular
+
+Broad
+
+Triangle
+
+Rectangle
+
+If Female:
+
+Slim
+
+Fit
+
+Pear
+
+Hourglass
+
+Rectangle
+
+Inverted Triangle
+
+Curvy
+
+Use a grid of selectable cards (click to select, highlight with #C0C0C0 border).
+
+5. Clothing Sizes
+
+Ask the user for 2 values:
+✔ Real worn size
+✔ Preferred comfortable size
+
+All as dropdowns (XS, S, M, L, XL, XXL, XXXL).
+
+Male Items:
+
+T-Shirt
+
+Hoodie
+
+Oversized Hoodie
+
+Jacket
+
+Sleeveless Jacket
+
+Pants
+
+Jeans
+
+Female Items (in addition):
+
+Skirt
+
+Each item must show two fields side by side:
+Real Size | Comfort Size
+
+6. Notes Section
+
+Large textarea
+
+Placeholder: “Write anything you want to add…”
+
+7. Submit Button
+
+Centered, full width (max 150px):
+
+Text: “Submit Model Form”
+
+Style: #C0C0C0 text, #1A1A1A button background, subtle shadow, hover lighten
+
+AFTER SUBMISSION (REQUIRED FUNCTIONALITY)
+
+When the user clicks Submit:
+
+Validate all required fields.
+
+Generate a PDF containing:
+
+User’s personal info
+
+Measurements
+
+Chosen morphology
+
+Image uploaded (embedded in PDF)
+
+Clothing sizes (real + comfortable)
+
+Notes
+
+The PDF must be automatically:
+
+Sent to my email: sfarwajdi@outlook.fr
+
+Sent to my WhatsApp number: +216 52 287 812
+
+Use JavaScript libraries (html2pdf.js or jsPDF) to build the PDF.
+For email + WhatsApp delivery, use either:
+
+EmailJS
+
+FormSubmit
+
+Netlify Functions
+
+or a simple backendless API endpoint
+
+(You may choose the simplest implementation that works on GitHub Pages or Netlify.)
+
+FOOTER
+
+Fixed footer at the bottom with:
+
+My SVG logo (same as header)
+
+Phone number: +216 52 287 812
+
+Email: sfarwajdi@outlook.fr
+
+Instagram icon (monochrome #C0C0C0), links to:
+https://www.instagram.com/be_theos
+
+Opens in a new tab.
+
+DELIVERABLES
+
+Provide:
+
+Complete HTML
+
+Complete CSS
+
+Complete JavaScript
+
+All code in one single-page file OR small clean structure (index.html + style.css + app.js)
+
+Fully ready for instant upload to GitHub Pages or Netlify
+
+PDF generation and email/WhatsApp sending must work
